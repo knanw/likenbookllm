@@ -21,11 +21,18 @@ app = FastAPI(title="Notebook Lite API", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], 
+    allow_origins=[
+        "https://notebook-lite-frontend-production.up.railway.app",
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+    ],
     allow_credentials=False, 
     allow_methods=["*"],      
     allow_headers=["*"],      
 )
+
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
 OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
