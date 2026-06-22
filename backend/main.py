@@ -68,19 +68,22 @@ def seed_sources():
     SOURCES.extend([
         Source(
             id=str(uuid4()),
-            title="Produktidee",
+            title="Kaffee-Roboter RoboBrew 3000",
             content=(
-                "Die Anwendung orientiert sich an einem vereinfachten NotebookLM-Interface. "
-                "Im Fokus stehen Quellen, Chat und automatisch erzeugte Notizen."
+                "Das Modell RoboBrew 3000 ist unser neuester Kaffee-Roboter.",
+                "Er verfügt über einen Wassertank von 5 Litern und kann bis zu 40 Espresso-Tassen pro Stunde kochen.",
+                "Wichtig: Der Roboter darf NIEMALS mit Milch im Wassertank befüllt werden, da dies die internen Düsen dauerhaft verstopft.",
+                "Die Reinigung erfolgt ausschließlich über das eingebaute Dampfprogramm 'CleanMax'."
             ),
             created_at=datetime.now(UTC).isoformat(),
         ),
         Source(
             id=str(uuid4()),
-            title="Projektziel",
+            title="Garantiebestimmungen RoboBrew",
             content=(
-                "Die Pruefungsaufgabe soll als funktionierender MVP umgesetzt werden. "
-                "Wichtig sind gute Struktur, schnelle Bedienbarkeit und ein startbares System."
+                "Die Garantie für den RoboBrew 3000 beträgt standardmäßig 24 Monate.",
+                "Sie erlischt sofort, wenn Schäden durch Fremdeflüssigkeiten (wie Sirup oder Milch) im Hauptwassertank entstehen.",
+                "Für gewerbliche Nutzung in Gastronomien verkürzt sich die Garantiezeit auf 12 Monate."
             ),
             created_at=datetime.now(UTC).isoformat(),
         ),
