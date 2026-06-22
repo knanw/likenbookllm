@@ -70,9 +70,9 @@ def seed_sources():
             id=str(uuid4()),
             title="Kaffee-Roboter RoboBrew 3000",
             content=(
-                "Das Modell RoboBrew 3000 ist unser neuester Kaffee-Roboter.",
-                "Er verfügt über einen Wassertank von 5 Litern und kann bis zu 40 Espresso-Tassen pro Stunde kochen.",
-                "Wichtig: Der Roboter darf NIEMALS mit Milch im Wassertank befüllt werden, da dies die internen Düsen dauerhaft verstopft.",
+                "Das Modell RoboBrew 3000 ist unser neuester Kaffee-Roboter. "
+                "Er verfügt über einen Wassertank von 5 Litern und kann bis zu 40 Espresso-Tassen pro Stunde kochen. "
+                "Wichtig: Der Roboter darf NIEMALS mit Milch im Wassertank befüllt werden, da dies die internen Düsen dauerhaft verstopft. "
                 "Die Reinigung erfolgt ausschließlich über das eingebaute Dampfprogramm 'CleanMax'."
             ),
             created_at=datetime.now(UTC).isoformat(),
@@ -81,8 +81,8 @@ def seed_sources():
             id=str(uuid4()),
             title="Garantiebestimmungen RoboBrew",
             content=(
-                "Die Garantie für den RoboBrew 3000 beträgt standardmäßig 24 Monate.",
-                "Sie erlischt sofort, wenn Schäden durch Fremdeflüssigkeiten (wie Sirup oder Milch) im Hauptwassertank entstehen.",
+                "Die Garantie für den RoboBrew 3000 beträgt standardmäßig 24 Monate. "
+                "Sie erlischt sofort, wenn Schäden durch Fremdeflüssigkeiten (wie Sirup oder Milch) im Hauptwassertank entstehen. "
                 "Für gewerbliche Nutzung in Gastronomien verkürzt sich die Garantiezeit auf 12 Monate."
             ),
             created_at=datetime.now(UTC).isoformat(),
