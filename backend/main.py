@@ -25,8 +25,9 @@ app.add_middleware(
         "http://localhost:3000",
         "http://127.0.0.1:3000",
         "https://notebook-lite-backend-production.up.railway.app",
-        "https://notebook-lite-frontend-production.up.railway.app/"
-    ],
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+        "https://notebook-lite-frontend-production.up.railway.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
